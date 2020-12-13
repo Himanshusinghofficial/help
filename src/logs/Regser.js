@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-// import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import {addser} from '../actions/logAction'
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-//Add Employee Details 
-const Regser = () => {
+const Regser = ({addser}) => {
   const [Name, setName] = useState('');
   const [Mobile, setMobile] = useState('');
   const [Email, setEmail] = useState('');
@@ -25,11 +25,10 @@ const Regser = () => {
         Message
       };
 
-    //   addLog(newLog);
+      addser(newLog);
 
       M.toast({ html: `Service is Register` });
 
-      // Clear Fields
       setName('');
       setMobile('');
       setEmail('');
@@ -142,17 +141,16 @@ const Regser = () => {
   );
 };
 
-// AddLogModal.propTypes = {
-//   addLog: PropTypes.func.isRequired
-// };
+Regser.propTypes = {
+  addser: PropTypes.func.isRequired
+};
 
 const modalStyle = {
   width: '75%',
   height: '75%',
 };
 
-// export default connect(
-//   null,
-// //   { addLog }
-// )(AddLogModal);
-export default Regser;
+export default connect(
+  null,
+  { addser }
+)(Regser);

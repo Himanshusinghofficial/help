@@ -1,6 +1,5 @@
 import React from 'react';
 
-//Adding button to Home When click Popup of Add Employees Form open
 const Addsugg = () => {
   return (
     <div className='action-btn p'>

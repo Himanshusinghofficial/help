@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-// import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import {addcom} from '../actions/logAction'
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-//Add Employee Details 
-const Regcom = () => {
+const Regcom = ({addcom}) => {
   const [Name, setName] = useState('');
   const [Mobile, setMobile] = useState('');
   const [Email, setEmail] = useState('');
@@ -25,11 +25,10 @@ const Regcom = () => {
         Message
       };
 
-    //   addLog(newLog);
+      addcom(newLog);
 
       M.toast({ html: `Complaint is Register` });
 
-      // Clear Fields
       setName('');
       setMobile('');
       setEmail('');
@@ -142,17 +141,16 @@ const Regcom = () => {
   );
 };
 
-// AddLogModal.propTypes = {
-//   addLog: PropTypes.func.isRequired
-// };
+Regcom.propTypes = {
+  addcom: PropTypes.func.isRequired
+};
 
 const modalStyle = {
   width: '75%',
   height: '75%',
 };
 
-// export default connect(
-//   null,
-// //   { addLog }
-// )(AddLogModal);
-export default Regcom;
+export default connect(
+  null,
+  { addcom }
+)(Regcom);

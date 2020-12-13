@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-// import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import {addsugg} from '../actions/logAction'
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-//Add Employee Details 
-const Sugg = () => {
+const Sugg = ({addsugg}) => {
   const [Name, setName] = useState('');
   const [Mobile, setMobile] = useState('');
   const [Email, setEmail] = useState('');
@@ -25,11 +25,10 @@ const Sugg = () => {
         Message
       };
 
-    //   addLog(newLog);
+      addsugg(newLog);
 
       M.toast({ html: `Thanks for Suggestion` });
-
-      // Clear Fields
+      
       setName('');
       setMobile('');
       setEmail('');
@@ -142,17 +141,16 @@ const Sugg = () => {
   );
 };
 
-// AddLogModal.propTypes = {
-//   addLog: PropTypes.func.isRequired
-// };
+Sugg.propTypes = {
+  addsugg: PropTypes.func.isRequired
+};
 
 const modalStyle = {
   width: '75%',
   height: '75%',
 };
 
-// export default connect(
-//   null,
-// //   { addLog }
-// )(AddLogModal);
-export default Sugg;
+export default connect(
+  null,
+  { addsugg }
+)(Sugg);
