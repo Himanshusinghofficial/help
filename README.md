@@ -6,13 +6,13 @@ Instructions:<br>
 1.used basic concepts of ReactJS<br>
 2.used routing, redux<br>
 3.wrote a clear & clean code with proper comments.<br>
-4.used ui frameworks like bootstrap, material etc.<br>
-<br>
+4.used ui frameworks like bootstrap, material etc.<br><br>
+
 Help section contains<br>
 1.Reach out to us<br>
 2.Register a complaint<br>
 3.Register a service<br>
-4.Share Suggestion<br>
+4.Share Suggestion<br><br>
 
 Help Screen :<br>
 * Help section page This will have sections like register a complaint, request a service, share suggestions, and reach out to us<br>
