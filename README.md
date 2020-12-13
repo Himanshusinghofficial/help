@@ -7,7 +7,7 @@ Instructions:<br>
 2.used routing, redux<br>
 3.wrote a clear & clean code with proper comments.<br>
 4.used ui frameworks like bootstrap, material etc.<br>
-
+<br>
 Help section contains<br>
 1.Reach out to us<br>
 2.Register a complaint<br>
@@ -60,40 +60,47 @@ Help Screen :<br>
 
 ![](Project_Images/Image7.png)
 
+#### `Image 8-9: Notification PopUp In All Three Help Section For Ex(Share Suggestion)`
+
+![](Project_Images/Image19.png)
+
+
+![](Project_Images/Image20.png)
+
 ### `Mobile View` :iphone:
 
-#### `Image 8-9: Help Page (Responsive)`
+#### `Image 10-11: Help Page (Responsive)`
 
 ![](Project_Images/Image8.png)
 
 
 ![](Project_Images/Image9.png)
 
-#### `Image 10: Menu-Toggle (Responsive)`
+#### `Image 12: Menu-Toggle (Responsive)`
 
 ![](Project_Images/Image10.png)
 
-#### `Image 11-12: Register a Complaint (Responsive)`
+#### `Image 13-14: Register a Complaint (Responsive)`
 
 ![](Project_Images/Image11.png)
 
 
 ![](Project_Images/Image12.png)
 
-#### `Image 13-14: Register a Service (Responsive)`
+#### `Image 15-16: Register a Service (Responsive)`
 
 ![](Project_Images/Image13.png)
 
 
 ![](Project_Images/Image14.png)
 
-#### `Image 15-16: Share Suggestion (Responsive)`
+#### `Image 17-18: Share Suggestion (Responsive)`
 
 ![](Project_Images/Image15.png)
 
 ![](Project_Images/Image16.png)
 
-#### `Image 17-18: Notification PopUp In All Three Help Ex(Register Compalint)(Responsive)`
+#### `Image 19-20: Notification PopUp In All Three Help Section For Ex(Register Compalint) (Responsive)`
 
 ![](Project_Images/Image17.png)
 
